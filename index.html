@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOMsFit</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
     <header class="header background_beige">
@@ -220,9 +221,9 @@
                 </p>
                 <h3 class="price__subtitle">Бонусы</h3>
                 <div class="price__wrap">
-                    <p class="price__two-position price__text">Продление абонемента<span>Скидка 5%</span></p>
-                    <p class="price__two-position price__text">День рождения<span>Скидка 10%</span></p>
-                    <p class="price__two-position price__text">Приведи подругу<span>Скидка 15%</span></p>
+                    <p class="price__two-position price__two-position__abonement price__text">Продление абонемента<span>Скидка 5%</span></p>
+                    <p class="price__two-position price__two-position__abonement price__text">День рождения<span>Скидка 10%</span></p>
+                    <p class="price__two-position price__two-position__abonement price__text">Приведи подругу<span>Скидка 15%</span></p>
                 </div>
                 <a href="#contacts" class="price__button button button_green"><span>Узнать подробнее</span></a>
             </div>
@@ -246,8 +247,13 @@
                         <input type="text" name="name" id="name" class="contacts__form-input">
                         <label for="phone" class="contacts__form-label">Телефон</label>
                         <input type="tel" name="phone" id="phone" class="contacts__form-input" value="+7(___)___-__-__">
-                        <label for="time" class="contacts__form-label">Удобное время</label>
-                        <input type="time" name="time" id="time" value="12:00" class="contacts__form-input">
+                        <div class="contacts__form-label">Удобное время</div>
+                        <div class="contacts__form__time-wrap">
+                            <label for="time1" class="contacts__form-label">С</label>
+                            <input type="time1" name="time" id="time" value="12:00" class="contacts__form-input">
+                            <label for="time2" class="contacts__form-label">До</label>
+                            <input type="time2" name="time" id="time" value="15:00" class="contacts__form-input">
+                        </div>
                         <input type="button" value="Перезвоните мне" class="contacts__form-button button button_brown">
                     </form>
                     <p class="contacts__form-signature">Нажимая на кнопку, вы даете <a href="">согласие на&nbsp;обработку персональных данных</a></p>

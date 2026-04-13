@@ -687,9 +687,11 @@ body:has(.header__mobile-menu__input:checked)  {
     @media (max-width: 1040px) {
         max-width: 100%;
     }
+}
 
+.price__two-position__abonement {
     @media (max-width: 421px) {
-    flex-direction: column;
+        flex-direction: column;
     }
 }
 
@@ -704,11 +706,14 @@ body:has(.header__mobile-menu__input:checked)  {
 
     @media (max-width: 660px) {
         grid-template-columns: repeat(2, auto);
+        border: 1px solid #3736363d;
+        margin-bottom: 16px;
+        padding: 10px;
     }
 
-    @media (max-width: 421px) {
+    /* @media (max-width: 421px) {
         grid-template-columns: repeat(1, auto);
-    }
+    } */
 }
 
 .price__wrap-1 .price__two-position span,
@@ -868,6 +873,11 @@ body:has(.header__mobile-menu__input:checked)  {
 
 .contacts__form-input[type="time"]::-webkit-calendar-picker-indicator {
     filter: invert(0.5) sepia(1) saturate(1);
+}
+
+.contacts__form__time-wrap {
+    display: flex;
+    width: 100%;
 }
 
 .contacts__form-button {
