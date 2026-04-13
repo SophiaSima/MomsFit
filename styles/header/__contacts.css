@@ -1,0 +1,63 @@
+.header__contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    @media (max-width: 1071px) {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 8px;
+    }
+}
+
+.header__contacts__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-items: center;
+
+    @media (max-width: 1070px) {
+       gap: 8px;
+    }
+}
+
+.header__contacts__phone,
+.header__contacts__address {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--grafit);
+
+    @media (max-width: 1070px) {
+        text-align: end;   
+    }
+}
+
+.header__contacts__phone:hover {
+    text-decoration: underline;
+}
+
+.header__contacts__wrap-social {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.header__contacts_mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.header__contacts__vk:hover svg path,
+.header__contacts__telegram:hover svg path {
+    stroke: var(--brown);
+}
+
+.header__contacts__vk:hover svg path:nth-child(2),
+.header__contacts__telegram:hover svg path:nth-child(2) {
+    fill: var(--brown);
+}

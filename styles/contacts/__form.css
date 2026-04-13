@@ -1,0 +1,106 @@
+.contacts__wrap-with-form {
+    width: 560px;
+    padding: 40px;
+    background-color: var(--beige);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 640px) {
+        width: 100%;
+    }
+
+    @media (max-width: 550px) {
+        padding: 20px;
+    }
+}
+
+.contacts__form-title {
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--grafit);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contacts__form-text {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--grafit);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contacts__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+.contacts__form-label {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--brown);
+}
+
+.contacts__form-input {
+    height: 48px;
+    padding: 12px 15px;
+    border-radius: 30px;
+    border: none;
+    background-color: #fff;
+    text-align: left;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.contacts__form-input,
+.contacts__form-input:focus,
+.contacts__form-input::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--brown);
+}
+
+.contacts__form-input:focus {
+    outline: 1px solid var(--brown);
+}
+
+.contacts__form-input:-webkit-autofill  {
+    -webkit-text-fill-color: var(--brown);
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+.contacts__form-input:-webkit-autofill:focus  {
+    -webkit-text-fill-color: var(--brown);
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+.contacts__form-input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.5) sepia(1) saturate(1);
+}
+
+.contacts__form-button {
+    color: #fff;
+    align-self: center;
+    margin-bottom: 15px;
+
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--beige);
+}
+
+.contacts__form-signature {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--grafit);
+    text-align: center;
+}
+
+.contacts__form-signature a {
+    font-weight: 500;
+    color: var(--grafit);
+}

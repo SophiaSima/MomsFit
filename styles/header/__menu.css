@@ -1,0 +1,29 @@
+.header__menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+
+    @media (max-width: 1071px) {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 8px;
+    }
+}
+
+.header__menu__item a {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--brown);
+}
+
+.header__menu__item a:hover {
+    text-decoration: underline;
+}
+
+.header__menu_mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+}

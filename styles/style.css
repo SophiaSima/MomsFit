@@ -1,0 +1,71 @@
+@import url("fonts/fonts.css");
+@import url("swiper-bundle.css");
+@import url("normalize.css");
+@import url("header/header.css");
+@import url("promo/promo.css");
+@import url("advantage/advantage.css");
+@import url("fitness/fitness.css");
+@import url("schedule/schedule.css");
+@import url("price/price.css");
+@import url("contacts/contacts.css");
+@import url("address/address.css");
+@import url("footer/footer.css");
+@import url("button/button.css");
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Arial", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header, section, footer {
+    width:100%;
+}
+
+.container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    @media (max-width: 990px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @media (max-width: 550px) {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+:root {
+    --beige: #EEEAE1;
+    --green: #5C9975;
+    --grafit: #373636;
+    --brown: #6B5732;
+}
+
+.background_beige {
+    background-color: var(--beige);
+}
+
+.title-h2 {
+    font-weight: 500;
+    color: var(--green);
+
+    @media (max-width: 1070px) {
+        font-size: 36px;
+    }
+}
